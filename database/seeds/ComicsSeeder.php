@@ -1,16 +1,16 @@
 <?php
 
-use App\Comics;
 use Illuminate\Database\Seeder;
+use App\Comics;
 
-class ComicTableSeeder extends Seeder
+class ComicsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run($comics)
+    public function run()
     {
         $comics = [
             [
@@ -122,5 +122,14 @@ class ComicTableSeeder extends Seeder
                 "type" => "graphic novel"
             ],
         ];
+        foreach ($comics as $comic){
+            $comics = new Comics();
+            $comics->title = $comic['title'];
+            $comics->description = $comic['description'];
+            $comics->price = $comic['price'];
+        }
     }
 }
+
+
+
