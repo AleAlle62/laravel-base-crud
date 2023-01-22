@@ -7,6 +7,6 @@
     <title>Comics</title>
 </head>
 <body>
-    ciao
+    finito
 </body>
 </html>
