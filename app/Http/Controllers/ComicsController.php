@@ -16,7 +16,7 @@ class ComicsController extends Controller
     {
         // chiedere la lista dei dati al db
         $comics = Comics::all();
-        return view('comics.index', compact('comics'));
+        return view('comics', compact('comics'));
     }
 
     /**
