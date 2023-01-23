@@ -7,10 +7,6 @@
     <title>Comics</title>
 </head>
 <body>
-    @foreach ($comics as $comic)
-        <li>{{ $comic->id }}</li>
-        <li>{{ $comic->title}} </li>
-        <li> {{ $comic->price }}</li>
-    @endforeach
+    finito
 </body>
 </html>
