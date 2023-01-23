@@ -125,6 +125,7 @@ class ComicsSeeder extends Seeder
         foreach ($comics as $fumetto) {
             $comics = new Comics();
             $comics->title = $fumetto['title'];
+            $comics->thumb = $fumetto['thumb'];
             $comics->description = $fumetto['description'];
             $comics->price = $fumetto['price'];
             $comics->save();

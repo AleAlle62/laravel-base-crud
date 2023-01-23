@@ -16,6 +16,7 @@ class ComicsTable extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
+            $table->string('thumb',200);
             $table->string('title');
             $table->text('description');
             $table->float('price');
