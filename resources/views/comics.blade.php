@@ -7,6 +7,6 @@
     <title>Comics</title>
 </head>
 <body>
-    finito
+    {{$comics->title}}
 </body>
 </html>
